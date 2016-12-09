@@ -2,11 +2,11 @@ var baseLayer = new ol.layer.Group({
     'title': 'Base maps',
     layers: [
 new ol.layer.Tile({
-    'title': 'OSM HOT',
+    'title': 'OSM B&W',
     'type': 'base',
     source: new ol.source.XYZ({
-        url: 'http://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
-        attributions: [new ol.Attribution({html: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'})]
+        url: 'http://{a-c}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png',
+        attributions: [new ol.Attribution({html: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'})]
     })
 })
 ]

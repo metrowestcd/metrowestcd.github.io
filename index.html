@@ -50,8 +50,8 @@
         var feature_group = new L.featureGroup([]);
         var bounds_group = new L.featureGroup([]);
         var raster_group = new L.LayerGroup([]);
-        var basemap0 = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 28
         });
         basemap0.addTo(map);
@@ -121,7 +121,7 @@
         feature_group.addLayer(json_MetroWestProperties0JSON);
         raster_group.addTo(map);
         feature_group.addTo(map);
-        var baseMaps = {'OSM B&W': basemap0};
+        var baseMaps = {'OSM': basemap0};
         L.control.layers(baseMaps,{'Metro West Properties<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/MetroWestProperties0_Own.png" /> Own<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/MetroWestProperties0_Rent.png" /> Rent<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/MetroWestProperties0_Transitional.png" /> Transitional<br />': json_MetroWestProperties0JSON,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
